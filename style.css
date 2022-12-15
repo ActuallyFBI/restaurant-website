@@ -35,9 +35,46 @@ header nav ul li {
   font-size: 1.6rem;
 }
 
-
-
 /* header style end */
+
+/* hero style start */
+.hero--info h1 {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  color: rgb(50,50,50);
+  margin: 3rem 0;
+}
+.restaurant {
+  color: #2A908F;
+}
+
+#hero--buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#hero--buttons :first-child {
+  background-color: #E76F51;
+  color: white;
+  padding: .5rem 1.5rem;
+  box-shadow: 5px 5px 15px #E76F51e;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15%;
+  font-size: 1rem;
+}
+
+#hero--buttons :last-child {
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.hero--info img {
+  margin: 3rem 0;
+}
+
+/* hero style end */
 
 @media screen and (min-width:725px) {
   
@@ -61,5 +98,20 @@ header nav ul li {
 #burger--menu {
   display: none;
 }
-
+.hero {
+  display: flex;
+  padding: 1rem;
+}
+.hero--info {
+  padding: 1rem;
+}
+.hero--info--block {
+  display: block;
+}
+#hero--buttons {
+  justify-content: flex-start;
+}
+#hero--image {
+  width: 375px;
+}
 }
