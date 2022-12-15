@@ -16,6 +16,29 @@ img {
   width: 100%;
 }
 
+.section--title {
+  text-align: center;
+  margin: 2rem auto;
+  font-family: 'Rancho', cursiv;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.section--title span {
+display: block;
+color:#E76F51
+margin-top: .5rem;
+}
+
+btn {
+  background-color:#2A908F;
+  color: white;
+  padding: .5rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
 /* header style start */
 
 header nav ul li {
@@ -76,6 +99,59 @@ header nav ul li {
 
 /* hero style end */
 
+/* specialties style start */
+
+.speciality--category {
+color:#E76F51;
+font-size: .5rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+padding-bottom: .5rem;
+position: relative;
+}
+.speciality--category::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: .5rem;
+  border-bottom: 1px solid black;
+}
+.speciality--desc {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+.speciality--title {
+  font-size: 2.6rem;
+  display: block;
+  position: relative;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+.speciality--title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: .5rem;
+  border-bottom: 1px solid black;
+}
+.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.speciality--image {
+  box-shadow: 5px 5px 15px rgba(200,200,200,0.0);
+}
+
+/* specialties style end */
+
+
 @media screen and (min-width:725px) {
   
 body {
@@ -113,5 +189,31 @@ header nav ul li {
 }
 #hero--image {
   width: 375px;
+}
+.specialities {
+  padding: 2rem;
+  background-color: #EFEFEF;
+}
+.speciality--item {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+.speciality--image {
+  width: 375px;
+}
+.price {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.price span {
+  margin-bottom: 1rem;
+}
+.speciality--item:last-child .speciality--image {
+  order: 1;
+}
+.speciality--item:last-child .speciality--info {
+  order: 2;
 }
 }
